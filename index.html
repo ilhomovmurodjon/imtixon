@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Multi Page Site</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .overflow-box {
+      width: 100%;
+      max-height: 200px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .flex-box {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    header, footer {
+      text-align: center;
+      background-color: burlywood;
+      padding: 20px 0;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    .section {
+      padding: 20px;
+      margin: 20px 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Multi-Page Site</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="media.html">Media</a>
+      <a href="layout.html">Layout</a>
+      <a href="form.html">Form</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore HTML & CSS in Action</h2>
+  </section>
+
+  <section class="section">
+    <h2>Introduction</h2>
+    <p>This project demonstrates all essential HTML & CSS concepts across multiple pages. Each page covers different topics like media elements, layout techniques, and forms.</p>
+  </section>
+
+  <section class="section">
+    <h2>Text Formatting Examples</h2>
+    <p><strong>Bold Text</strong> and <em>Italic Text</em> with <u>underlines</u>.</p>
+    <p>This is <span style="color: red;">colored</span> and <span style="font-size: 18px;">resized</span> span elements inside paragraphs.</p>
+    <div style="border: 1px solid #ccc; padding: 10px; margin-top: 10px;">This is a sample div element used for grouping.</div>
+  </section>
+
+  <section class="section">
+    <h2>List Showcase</h2>
+    <ul>
+      <li>Unordered Item 1</li>
+      <li>Unordered Item 2</li>
+      <li>Unordered Item 3</li>
+    </ul>
+    <ol>
+      <li>Ordered Item A</li>
+      <li>Ordered Item B</li>
+      <li>Ordered Item C</li>
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2>Button Display</h2>
+    <button class="btn">Click Me</button>
+    <button class="btn">Another Button</button>
+  </section>
+
+  <section class="section">
+    <h2>Overflow and Scroll Example</h2>
+    <div class="overflow-box">
+      <p>This is an overflowing content box.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec justo vitae est faucibus euismod. Proin luctus metus a lacus varius imperdiet. Sed suscipit sapien non libero gravida facilisis.</p>
+      <p>Praesent malesuada sem vel nulla ultricies, in tincidunt velit bibendum. Vestibulum laoreet velit a sapien pharetra dignissim. Integer fermentum urna id felis elementum, ac porta lacus dapibus.</p>
+      <p>Quisque a dolor nec risus cursus porttitor. Nullam volutpat risus id velit feugiat rhoncus. Morbi tincidunt justo in tellus tincidunt tincidunt. Integer ac hendrerit massa.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Table Example</h2>
+    <table border="1">
+      <thead>
+        <tr><th>Name</th><th>Age</th><th>Occupation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ali</td><td>24</td><td>Developer</td></tr>
+        <tr><td>Malika</td><td>29</td><td>Designer</td></tr>
+        <tr><td>Jamshid</td><td>34</td><td>Engineer</td></tr>
+        <tr><td>Shahnoza</td><td>22</td><td>Student</td></tr>
+        <tr><td>Rustam</td><td>40</td><td>Manager</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Repeated content -->
+  <section class="section">
+    <h2>Repeated Section</h2>
+    <div class="flex-box">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Sample">
+        <h3>Card Title</h3>
+        <p>Description goes here. This is a repeated block to simulate content expansion.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Sample">
+        <h3>Card Title</h3>
+        <p>Description goes here. This is a repeated block to simulate content expansion.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Sample">
+        <h3>Card Title</h3>
+        <p>Description goes here. This is a repeated block to simulate content expansion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional repeated sections can go here -->
+
+  <footer>
+    <p>&copy; 2025 HTML & CSS Project</p>
+  </footer>
+</body>
+</html>

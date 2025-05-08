@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout - Multi Page Site</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #444;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ccc;
+      text-decoration: none;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 25%;
+      background-color: #f0f0f0;
+      padding: 20px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    .main-content {
+      width: 70%;
+      margin-left: 5%;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    }
+    .box {
+      height: 100px;
+      margin: 10px 0;
+      background-color: #e0e0e0;
+      border: 1px solid #bbb;
+      padding: 10px;
+      overflow: auto;
+    }
+    .float-box {
+      float: left;
+      width: 45%;
+      margin: 10px 2.5%;
+      background-color: #ddd;
+      padding: 15px;
+      border: 1px solid #aaa;
+    }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Layout Page</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="media.html">Media</a>
+      <a href="layout.html">Layout</a>
+      <a href="form.html">Form</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li>Navigation 1</li>
+        <li>Navigation 2</li>
+        <li>Navigation 3</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h2>Main Content Area</h2>
+      <p>This section demonstrates how to structure content using CSS layout properties such as float, display, overflow, height, and width.</p>
+
+      <div class="box">
+        <p>This is a box with overflow auto and height control. Scroll if content exceeds.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec fermentum metus. Donec euismod nunc sed mi convallis, nec tincidunt lorem fermentum.</p>
+      </div>
+
+      <div class="clearfix">
+        <div class="float-box">
+          <p>Float box 1: left aligned content</p>
+        </div>
+        <div class="float-box">
+          <p>Float box 2: also left aligned with margin</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>Another container with shadow, margin and border styling.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 HTML & CSS Layout Showcase</p>
+  </footer>
+</body>
+</html>
+
+
